@@ -4,5 +4,7 @@
 		"dbaeumer",
 		"devcontainers",
 		"eamodio"
-	]
+	],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true
 }
