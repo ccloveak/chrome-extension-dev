@@ -6,6 +6,8 @@ import url from "url";
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+import { CRX_OUTDIR } from "./globalConfig";
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
@@ -16,6 +18,10 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
+  },
+  build: {
+    // 输出目录
+    outDir: CRX_OUTDIR,
   },
   plugins: [react()],
 });

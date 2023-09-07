@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite -c vite.popup.config.js",
+    "build": "vite build -c vite.popup.config.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview -c vite.popup.config.js"
   },
   "dependencies": {
     "eslint-config-prettier": "^9.0.0",
